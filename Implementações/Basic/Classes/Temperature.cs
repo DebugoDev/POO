@@ -74,8 +74,8 @@ public class Temperature(double value, ETemperatureScale scale)
         // Define o símbolo de acordo com a escala
         string symbol = Scale switch
         {
-            ETemperatureScale.Celsius => "° C",
-            ETemperatureScale.Fahrenheit => "° F",
+            ETemperatureScale.Celsius => "°C",
+            ETemperatureScale.Fahrenheit => "°F",
             ETemperatureScale.Kelvin => "K",
             _ => ""
         };

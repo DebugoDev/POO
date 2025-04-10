@@ -14,7 +14,7 @@ public class MyList<T>
     // Construtor que permite criar a lista a partir de uma array
     public MyList(T[] list)
     {
-        List = list;
+        List = [..list];
     }
 
     // Adiciona um elemento no início da lista
