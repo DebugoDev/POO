@@ -45,6 +45,6 @@ public class Color(byte r, byte g, byte b, byte a = 255)
         return new Color(r, g, b, A);
     }
 
-    // Representação da string da cor
+    // Representação em string da cor
     public override string ToString() => $"Color(R:{R}, G:{G}, B:{B}, A:{A})";
 }

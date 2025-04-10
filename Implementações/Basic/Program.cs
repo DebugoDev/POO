@@ -28,7 +28,7 @@ Console.WriteLine();
 
 #region Temperature
 
-Temperature t1 = new(25, ETemperatureScale.Celsius);   
+Temperature t1 = new(25, ETemperatureScale.Celsius);
 Temperature t2 = new(77, ETemperatureScale.Fahrenheit);
 
 Console.WriteLine("Temperatura 1: " + t1);
@@ -48,3 +48,49 @@ Console.WriteLine(
 
 #endregion
 
+Console.WriteLine();
+
+#region Complex
+
+Complex c1 = (3, 2);
+Complex c2 = (1, -5);
+
+Complex sum = c1 + c2;
+
+Console.WriteLine($"C1: {c1}");
+Console.WriteLine($"C2: {c2}");
+Console.WriteLine($"Soma: {sum}");
+
+Complex c3 = (3, 2);
+
+Console.WriteLine($"C1 == C3? {c1 == c3}");
+Console.WriteLine($"C1 == C2? {c1 == c2}");
+
+#endregion
+
+#region MyList
+
+MyList<string> names = new();
+
+names.Append("Anna");
+names.Append("Maria");
+names.Prepend("Lucas");
+
+Console.WriteLine(names); 
+
+names.Insert(1, "João");
+names.Remove("Maria");
+
+Console.WriteLine(names);
+
+Console.WriteLine($"Contém 'Anna'? {names.Contains("Anna")}");
+Console.WriteLine($"Posição de 'João': {names.IndexOf("João")}");
+Console.WriteLine($"Tamanho: {names.Size}");
+
+names.RemoveAt(1);
+Console.WriteLine(names);
+
+names.Clear();
+Console.WriteLine(names); 
+
+#endregion
